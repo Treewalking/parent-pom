@@ -16,6 +16,8 @@ jobs:
         run: echo "Repository has passed compliance rules"
       - name: validate-commit-rules
         run: echo "Commit message and association to valid ticket"
+      - name: validate-repository-workflow
+        run: echo "Workflow is based on a compliant version"
 
   build:
     runs-on: ubuntu-latest
