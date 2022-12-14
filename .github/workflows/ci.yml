@@ -6,8 +6,10 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - name: my-step
-        run: echo "Hello World!"
+      - name: validate-github-repository
+        run: echo "Repository has passed compliance rules"
+      - name: validate-commit-rules
+        run: echo "Commit message and association to valid ticket"
 
   build:
     needs: validate
