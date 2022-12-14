@@ -18,7 +18,7 @@ jobs:
         run: echo "Commit message and association to valid ticket"
 
   build:
-    needs: validate
+    needs: pull-request-pre-checks
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
